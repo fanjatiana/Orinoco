@@ -1,68 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-  crossorigin="anonymous"
-  >
-
-  <title>Info School</title>
+  <meta charset="utf-8">
+  <meta name="decription" content="">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, inital-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"crossorigin="anonymous">
+  <title>Orinoco</title>
 </head>
-
 <body>
-  <div class="bg-dark">
-    <div class="container">
-      <div class="row">
-        <nav class="col navbar navbar-expand navbar-dark">
-          <a class="navbar-brand" href="index.html">Info School</a>
+  <header>
+    <div class="bg-light text-dark pt-3 pb-3">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="col-12 navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="images/logo_mini.png" width="40" height="30" alt="logo orinoco">Orinoco</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class=" col-10 collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ours en peluche fait main</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"href="#">Caméra Vintage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Meuble en chêne</a>
+                </li>
+              </ul>
+            </div>  
+            <div class="col-2 text-dark">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Panier</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid mt-5">
+      <header>
+        <div class="row">
+          <div class="bg-dark text-light jumbotron col-12 text-center">
+            <h1> lomo instant sanremo</h1>
+            <h2>Entrez dans un monde de créativité avec le Lomo'Instant</h2>
+          </div>
+        </div>
+      </header>
+
+      <div class="row card-deck">
+        <div class="col-4 card">
+          <img src="images/lomo_2.jpg">
+        </div>
+        <div class="col-5 card">
           <div>
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cours</a>
-              </li>
+            <h3 class="h4">3 modes photo intelligents...et bien plus!</h3>
+            <ul>
+              <li class="small">mode flash automatique:Ce mode est parfait dans toutes les situations et lorsque vous voulez shooter rapidement.</li>
+              <li class="small">mode créatif avec flash:idéal pour shooter à l’intérieur</li>
+              <li class="small">mode créatif sans flash:idéal pour les longues expositions de nuit</li>
             </ul>
           </div>
-        </nav>
+          <div>
+            <h3 class="h4"> Toujours plus de créativité</h3>
+            <ul>
+              <li class="small">utilise des pellicules instax mini (photo taille d'une carte de crédit)</li>
+              <li class="small">exposition multiple : combinez plusieurs photos dans un seul cadre!</li>
+              <li class="small">expositions longues: création de photos avec des effets lumières striées</li>
+              <li class="small">filtres couleur: révélez votre côté artistique !</li>
+            </ul>
+          </div>
+          <div>
+          <h3 class="h4">Descriptif technique</h3>
+            <table>
+              <tr>
+                <th class="small">marque</th>
+                <td class="small">lomography</td>
+              </tr>
+               <tr>
+                <th class="small">couleur</th>
+                <td class="small">blanc/blanc cassé</td>
+              </tr>
+              <tr>
+                <th class="small">dimensions L x W x H </th>
+                <td class="small">6.1 x 11.5 x 14.5</td>
+               </tr>
+            </table>
+          </div>  
+        </div>
+        <div class="col-3 card">
+          <div class="card-header">
+            <h3>
+              Personnalisez votre commande
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <h4>Couleur</h4>
+              <select class=form-control>
+                <option value=blanc>blanc cassé</option>
+                <option value=rouge>rougex</option>
+                <option value=noir>noir</option>
+                <option value=noir>marron</option>
+              </select>
+            </div>
+            <div>
+              <h4>lentilles</h4>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" [(ngModel)]="Fisheye" name="Fisheye"> Objectif amovible Lomo'Instant Fisheye
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" [(ngModel)]="portrait" name="portrait"> Objectif amovible Lomo'Instant Portrait
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" [(ngModel)]="gros-plan" name="gros-plan"> Objectif amovible Lomo'Instant gros-plan
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5>quantité</h5>
+              <div class="col-3">
+                <select class=form-control col-1 >
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10>10</option>
+                </select>
+            </div>
+            <div>
+              <button class="btn btn-primary mt-3" type="submit">ajouter au panier</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>HERO SECTION</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <p>INFO CARD 1</p>
-      </div>
-      <div class="col-12 col-lg-4">
-        <p>INFO CARD 2</p>
-      </div>
-      <div class="col-12 col-lg-4">
-        <p>INFO CARD 3</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p>FOOTER</p>
-      </div>
-    </div>
-  </div>
+  </main>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <footer>
+    <div class="bg-light text-dark pt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <h4 class="h6">Pour mieux nous connâitre</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="small">A propos d'Orinoco</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h4 class="h6">Informations de commande</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="small">Condition générale de vente</a></li>
+              <li><a href="#" class="small">Service et garanties</a></li>
+              <li><a href="#" class="small">Suivi de commande</a></li>
+              <li><a href="#" class="small">Livraison et paiement</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h4 class="h6">Besoin d'aide?</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="small">Service après vente</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </footer>
 </body>
 </html>
