@@ -49,59 +49,76 @@
   </header>
 
   <main>
-    <div class="container-fluid mt-5">
+    <div class="container-fluid  mb-5">
       <header>
         <div class="row">
           <div class="bg-dark text-light jumbotron col-12 text-center">
-            <h1> lomo instant sanremo</h1>
+            <h1>lomo instant sanremo</h1>
             <h2>Entrez dans un monde de créativité avec le Lomo'Instant</h2>
           </div>
         </div>
       </header>
 
       <div class="row card-deck">
-        <div class="col-4 card">
-          <img src="images/lomo_2.jpg">
-        </div>
+        
         <div class="col-5 card">
+          <div class="row ">
+            <div class=" card-header col-12 bg-white">
+              <img  src="images/lomo_2.jpg" >
+            </div>
+          </div>
+          <div class="row card-footer card-deck bg-white">
+            <div class="col-4 card">
+              <img src="images/lomo/marron.jpg">
+            </div>
+            <div class="col-4  card">
+              <img src="images/lomo/noir.jpg">
+            </div>
+            <div class="col-4card">
+              <img src="images/lomography_mini.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 card pt-3">
           <div>
-            <h3 class="h4">3 modes photo intelligents...et bien plus!</h3>
+            <h3 class="h5">3 modes photo intelligents...et bien plus!</h3>
             <ul>
-              <li class="small">mode flash automatique:Ce mode est parfait dans toutes les situations et lorsque vous voulez shooter rapidement.</li>
-              <li class="small">mode créatif avec flash:idéal pour shooter à l’intérieur</li>
-              <li class="small">mode créatif sans flash:idéal pour les longues expositions de nuit</li>
+              <li class="small">Mode flash automatique: parfait dans toutes les situations et lorsque vous voulez shooter rapidement.</li>
+              <li class="small">Mode créatif avec flash: idéal pour shooter à l’intérieur</li>
+              <li class="small">Mode créatif sans flash: idéal pour les longues expositions de nuit</li>
             </ul>
           </div>
           <div>
-            <h3 class="h4"> Toujours plus de créativité</h3>
+            <h3 class="h5"> Toujours plus de créativité</h3>
             <ul>
-              <li class="small">utilise des pellicules instax mini (photo taille d'une carte de crédit)</li>
-              <li class="small">exposition multiple : combinez plusieurs photos dans un seul cadre!</li>
-              <li class="small">expositions longues: création de photos avec des effets lumières striées</li>
-              <li class="small">filtres couleur: révélez votre côté artistique !</li>
+              <li class="small">Utilise des pellicules instax mini (photo de la taille d'une carte de crédit)</li>
+              <li class="small">Exposition multiple : combinez plusieurs photos dans un seul cadre!</li>
+              <li class="small">Expositions longues: création de photos avec des effets lumières striées</li>
+              <li class="small">Filtres couleur: révélez votre côté artistique !</li>
             </ul>
           </div>
           <div>
-          <h3 class="h4">Descriptif technique</h3>
+          <h3 class="h5">Descriptif technique</h3>
             <table>
               <tr>
-                <th class="small">marque</th>
-                <td class="small">lomography</td>
+                <th class="small" >Marque</th>
+                <td class="small"  style="width: 40%">Lomography</td>
               </tr>
                <tr>
-                <th class="small">couleur</th>
-                <td class="small">blanc/blanc cassé</td>
+                <th class="small" >Couleur</th>
+                <td class="small"  style="width: 40%">Blanc/Blanc cassé</td>
               </tr>
               <tr>
-                <th class="small">dimensions L x W x H </th>
-                <td class="small">6.1 x 11.5 x 14.5</td>
-               </tr>
+                <th class="small">Dimensions (L x l x H) </th>
+                <td class="small"  style="width: 40%" > 6.1 x 11.5 x 14.5</td>
+              </tr>
             </table>
           </div>  
         </div>
         <div class="col-3 card">
-          <div class="card-header">
-            <h3>
+          <div class="card-header pt-3">
+            <h3 class="h4">
               Personnalisez votre commande
             </h3>
           </div>
@@ -109,14 +126,13 @@
             <div class="mb-3">
               <h4>Couleur</h4>
               <select class=form-control>
-                <option value=blanc>blanc cassé</option>
-                <option value=rouge>rougex</option>
-                <option value=noir>noir</option>
-                <option value=noir>marron</option>
+                <option value=blanc>Blanc cassé</option>
+                <option value=noir>Noir</option>
+                <option value=noir>Marron</option>
               </select>
             </div>
             <div>
-              <h4>lentilles</h4>
+              <h4>Lentilles</h4>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" [(ngModel)]="Fisheye" name="Fisheye"> Objectif amovible Lomo'Instant Fisheye
@@ -136,7 +152,7 @@
           </div>
           <div class="card-footer">
             <div>
-              <h5>quantité</h5>
+              <h5>Quantité</h5>
               <div class="col-3">
                 <select class=form-control col-1 >
                   <option value=1>1</option>
@@ -152,7 +168,7 @@
                 </select>
             </div>
             <div>
-              <button class="btn btn-primary mt-3" type="submit">ajouter au panier</button>
+              <button class="btn btn-primary mt-3" type="submit">Ajouter au panier</button>
             </div>
           </div>
         </div>
@@ -160,7 +176,7 @@
   </main>
 
   <footer>
-    <div class="bg-light text-dark pt-3">
+    <div class="bg-light text-dark pt-3 ">
       <div class="container-fluid">
         <div class="row">
           <div class="col-4">
